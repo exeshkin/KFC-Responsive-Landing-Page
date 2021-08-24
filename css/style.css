@@ -217,3 +217,89 @@ body {
   width: 100%;
   max-width: 600px;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer .social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .social-icon a {
+  color: #fff;
+  font-size: 2em;
+  margin-right: 20px;
+  display: inline-block;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.footer .social-icon a:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.footer .prev-next {
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.footer .prev-next p {
+  position: relative;
+  color: #fff;
+  text-align: end;
+  margin-bottom: 15px;
+}
+
+.footer .prev-next p::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -65px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50px;
+  height: 2px;
+  background: #fff;
+}
+
+.footer .prev-next span {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  font-size: 2em;
+  color: #fff;
+}
+
+.footer .prev-next .prev {
+  margin-right: 20px;
+}
