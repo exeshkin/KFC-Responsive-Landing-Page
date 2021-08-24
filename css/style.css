@@ -89,3 +89,105 @@ h6 {
 }
 
 /* null style */
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.main {
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(#f0483a, #d10a20);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 100px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+}
+
+.header .logo-img {
+  max-width: 90px;
+}
+
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .nav-link {
+  position: relative;
+  color: #fff;
+  margin-left: 40px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+}
+
+.content .text {
+  width: 100%;
+  max-width: 600px;
+}
+
+.content .text p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  margin: 20px 0;
+}
+
+.content .text-title {
+  color: #fff;
+  font-size: 5em;
+  font-weight: 300;
+}
+
+.content .text-title span {
+  font-weight: 700;
+}
+
+.content .btn {
+  position: relative;
+  display: inline-block;
+  padding: 20px 50px;
+  background: #fff;
+  color: #333;
+  font-size: 1.1em;
+  font-weight: 500;
+  border-radius: 40px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.content .btn:hover {
+  letter-spacing: 2px;
+}
